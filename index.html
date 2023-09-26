@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>First Bootstrap 4 exercise</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+	<article class="p-2">
+	    
+	    <h2>Introductory Bootstrap exercise</h2>
+	    
+	    <p>Open this file in VS Code and complete the following steps, loading the file in a browser after each step to check the effect in the rendered page. You <strong>should not</strong> add any styling instructions except via Bootstrap classes.</p>
+	    <ol>
+		<li>Examine the file and the content structure. You will see eight <code>section</code> HTML elements. Add a border to these elements, by assigning them to the Bootstrap class <code>border</code>.</li>
+		<li>By exploring Bootstrap 5 documentation on W3 Schools or other source, for each <code>section</code> element find one or more Bootstrap classes that produce the style requested by the element's text and apply them.</li>
+		<li>Each <code>section</code> element is directly inside a <code>div</code> element. Turn these div elements into <em>medium</em> Bootstrap columns of sizes 2, 3, 2, 3, x, 3, 4, y. Determine x and y so that the first five columns fill the first row and the last three columns fill the second row. The rows are represented by <code>div</code> elements assigned to the Bootstrap class <code>row</code> (confirm this by examining the file).</li>
+		<li>Get all the <code>section</code> elements in each row to take the full height of the containing column and row, by assigning them to the class <code>h-100</code>.</li>
+		<li>Give each column element a little space by assigning it to class <code>mt-3</code>.</li>
+		<li>Add some padding to each <code>section</code> element that doesn't have it already, by using the Bootstrap class <code>p-2</code>.</li>
+		<li>The expected result can be seen <a href="target.png">here</a>.</li>
+	    </ol>
+	</article>
+	
+	<div class="container-fluid">
+	    <div class="row">
+		<div class="col-2 mt-3">
+		    <section class="border bg-danger h-100 p-2">
+			Colour my background red
+		    </section>
+		</div>
+		<div class="col-3 mt-3">
+		    <section class="border text-uppercase h-100 p-2">
+			Make my text upper case
+		    </section>
+		</div>
+		<div class="col-2 mt-3">
+		    <section class="border fw-bold h-100 p-2">
+			Make my text bold
+		    </section>
+		</div>
+		<div class="col-3 mt-3">
+		    <section class="border p-5 h-100">
+			Give me the greatest possible padding
+		    </section>
+		</div>
+		<div class="col-2 mt-3">
+		    <section class="border text-info bg-warning h-100 p-2">
+			Colour my text blue and my background yellow
+		    </section>
+		</div>
+	    </div>
+	    <div class="row">
+		<div class="col-3 mt-3">
+		    <section class="border text-center h-100 p-2">
+			Center my text horizontally
+		    </section>
+		</div>
+		<div class="col-4 mt-3">
+		    <section class="border h-100 p-2">
+			Insert an image of your choice into me and make it circular and 25% of its parent's width
+			<img src="image.jpeg" class="rounded-circle w-25">
+		    </section>
+		</div>
+		<div class="col-4 mt-3">
+		    <section class="border rounded-0 border-5 border-info border-start-0 border-end-0 h-100 p-2">
+			Make my box non-rounded, with thickest possible blue top and bottom border lines and no border lines to the side
+		    </section>
+		</div>
+	    </div>
+	</div>
+    </body>
+</html>
